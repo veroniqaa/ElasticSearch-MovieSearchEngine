@@ -41,7 +41,7 @@
             'index'=>'movies_v2',
             'type'=>'_doc',
             'body' => [
-                'size' => 10,
+                'size' => 100,
                 "query" => [
                     "bool" => [
                       "must" => [

@@ -1,0 +1,52 @@
+PUT movies_v2
+{
+    "mappings" : {
+      "dynamic" : "strict",
+      "properties" : {
+        "directors" : {
+          "type" : "nested",
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "type" : "text"
+            }
+          }
+        },
+        "genres" : {
+          "type" : "nested",
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "type" : "text"
+            }
+          }
+        },
+        "poster" : {
+          "type" : "keyword"
+        },
+        "rate" : {
+          "type" : "float"
+        },
+        "title" : {
+          "type" : "search_as_you_type",
+          "doc_values" : false,
+          "max_shingle_size" : 3
+        },
+        "title_org" : {
+          "type" : "search_as_you_type",
+          "doc_values" : false,
+          "max_shingle_size" : 3
+        },
+        "type" : {
+          "type" : "keyword"
+        },
+        "year" : {
+          "type" : "short"
+        }
+      }
+    }
+  }
