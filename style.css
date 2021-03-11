@@ -1,0 +1,129 @@
+body
+{
+	background: rgb(161, 219, 161);
+	font-family:'Georgia';
+}
+
+#container
+{
+	width: 90%;
+	min-height: 600px;
+	background: rgb(161, 219, 161);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+#container p
+{
+	font-size: 50px;
+	font-family:'Courier New';
+	font-weight: bold;
+	color: black;
+	padding: 30px;
+	margin-top: 50px;
+}
+
+input[type='text']
+{
+	width: 400px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-size: 25px;
+	background-color:rgb(240, 224, 154);
+	border: 2px solid rgb(151, 127, 17);
+
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#match-list
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+	border: none;
+}
+
+.field
+{
+	min-height: 305px;
+	margin-top: 20px;
+	border: 1px solid white;
+	background-color: rgb(240, 224, 154, 0.8);
+	cursor: pointer;
+	padding: 10px;
+	font-size: 26px;
+	text-align: center;
+	position: relative;
+
+	border: 2px solid rgb(151, 127, 17);
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.field:hover
+{
+  list-style-type: none;
+  cursor: pointer;
+  background-color: rgb(199, 166, 19);
+  color: black;
+  font-size: 27px;
+  font-weight: bold;
+
+  border: 2px solid rgb(151, 127, 17);
+  box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.poster
+{
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.title
+{
+	min-width: 50px;
+	font-size: 46px;
+	font-weight: bold;
+	text-align: left;
+
+	position: absolute;
+	margin-left: 240px;
+	margin-top: 10px;	
+}
+
+.director
+{
+	margin-top: 200px;
+	margin-left: 240px;
+	position: absolute;
+}
+
+.year
+{
+	margin-top: 230px;
+	margin-left: 240px;
+	position: absolute;
+}
+
+.rate
+{	
+	font-size: 36px;
+	color: rgb(231, 25, 25);
+	font-weight: bold;
+	text-align: right;
+
+	position: absolute;
+	width: 80px;
+	height: 50px;
+	margin-left: 88%;
+	margin-top: 220px;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
